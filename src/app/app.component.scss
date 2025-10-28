@@ -93,9 +93,11 @@ border-radius:20px;
 {
     background-color:#f9fbfe;
 }
-.healthy-img
-{
-  width:370px;
+.healthy-img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  display: block;
 }
 .healthy-heading {
     color: #183b56;
@@ -122,10 +124,10 @@ border-radius:20px;
   {
    background-color:white;
   }
-.payment-img
-{
-    width:370px;
-}
+// .payment-img
+// {
+//     width:370px;
+// }
 .payment-card
 {
     width: 50px;
@@ -159,7 +161,8 @@ border-radius:20px;
 {
     width: 240px;
     height: 250;
-    margin:5px;
+    padding: 5%;
+    margin-left: 45%;
 }
 .Gift-voucher
 {
@@ -228,3 +231,21 @@ font-weight: 700;
     font-family: "Roboto";
     font-size: 18px;
   }
+  .navbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
