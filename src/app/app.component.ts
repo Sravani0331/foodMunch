@@ -9,6 +9,14 @@ declare var bootstrap: any;
 export class AppComponent {
   title = 'foodMunch';
   ngAfterViewInit(): void {
+    const videoModal: any = document.getElementById('videoModal');
+    const videoFrame: any = document.getElementById('videoFrame');
+    const videoSrc = videoFrame.src;
+
+    videoModal?.addEventListener('hidden.bs.modal', () => {
+      videoFrame.src = '';
+      videoFrame.src = videoSrc;
+    });
     const links = document.querySelectorAll('.nav-link-close');
     const nav = document.getElementById('navbarNavAltMarkup');
 
